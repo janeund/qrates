@@ -1,3 +1,16 @@
-
+.wrapper {
+  max-width: 1197px;
+  margin: auto;
+}
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 21px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
