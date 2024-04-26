@@ -1,4 +1,2 @@
-@forward "abstract/constants";
-@forward "base/base";
-@forward "layouts/wrapper";
-@forward "component/header";
+@use 'global';
+@use 'components';
