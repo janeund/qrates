@@ -11,30 +11,60 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="wrapper header__wrapper">
-      <div class="header__logo-line">
-        <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
-        <a href="#" class="logo">
-          <object type="image/svg+xml" data="./src/img/logo.svg" class="logo-object">
-            Your browser does not support SVG
-          </object>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <a href="" class="header__logo">
+          <img src="./src/img/logo.svg" alt="qrates">
         </a>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <div class="navigation-submenu">
+                <div class="navigation-submenu__button">Discover music
+                  <i class="arrow-button"></i>
+                </div>
+                <ul class="navigation-submenu__list">
+                  <li class="navigation-submenu__item">
+                    <a href="" class="navigation-submenu__link">Records</a>
+                    <a href="" class="navigation-submenu__link">Cassettes</a>
+                    <a href="" class="navigation-submenu__link">Stories</a>
+                    <a href="" class="navigation-submenu__link">Qrates Curated</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list-item">
+              <a href="" class="navigation__link">For artists</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="" class="navigation__link">For fans</a>
+            </li>
+          </ul>
+          <div class="navigation__social-icons">
+            <a href="" class="social-icon" target="_blank"></a>
+            <a href="" class="social-icon" target="_blank"></a>
+            <a href="" class="social-icon" target="_blank"></a>
+          </div>
+          <div class="navigation__buttons">
+            <a href="" class="navigation__start-button"></a>
+            <a href="" class="navigation__login-button"></a>
+          </div>
+        </nav>
+        <a href="" class="header__search search-icon"></a>
+        <a href="" class="header__cart cart-icon"></a>
+        <div class="header__right-bar">
+          <a href="" class="header__login-button">Log In</a>
+          <a href="" class="header__start-button">Make your own</a>
+          <div class="header__burger burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </div>
       </div>
-      <nav class="header__navigation">
-        <ul class="navigation">
-          <li class="navigation__link">Home</li>
-          <li class="navigation__link">Services</li>
-          <li class="navigation__link">About</li>
-          <li class="navigation__link">Product</li>
-        </ul>
-      </nav>
-      <div class="header__buttons">
-        <button class="button button_bordered">Sign In</button>
-        <button class="button button_colored">Sign Up</button>
-      </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </body>
 
 </html>
