@@ -1,67 +1,94 @@
+:root {
+  --color-yellow: #FFF804;
+  --color-pink: #E280FF;
+  --color-green: #81836C;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(1rem, 0.9353448276rem + 0.275862069vw, 1.125rem);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
 .wrapper {
-  max-width: 1197px;
-  margin: auto;
-}
-@media (max-width: 1197px) {
-  .wrapper {
-    padding: 0 46px;
-  }
-}
-@media (max-width: 414px) {
-  .wrapper {
-    padding: 0 21px;
-  }
+  width: min(100% - 2rem, 69.375rem);
+  margin-inline: auto;
 }
 
-.header {
-  background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  padding: 15px 0 17px 0;
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
 }
-@media (max-width: 768px) {
-  .header__wrapper {
-    padding-left: 24px;
-  }
+h1 span,
+h2 span,
+h3 span {
+  display: inline-block;
 }
-
-.header__logo-line {
-  display: flex;
-}
-@media (max-width: 414px) {
-  .header__logo-line {
-    justify-content: center;
-    flex-grow: 1;
-    position: relative;
-  }
-}
-
-.header__hamburger {
-  margin-right: 37px;
-}
-@media (max-width: 414px) {
-  .header__hamburger {
-    position: absolute;
-    left: 0;
-  }
+h1 span::after,
+h2 span::after,
+h3 span::after {
+  content: "";
+  height: 2px;
+  display: block;
+  background-color: var(--color-green);
 }
 
-.header__buttons > .button {
-  margin-left: 14px;
+h1 {
+  font-size: clamp(3.125rem, 2.1551724138rem + 4.1379310345vw, 5rem);
 }
-.header__buttons > .button:first-child {
-  margin-left: 14px;
-  margin-left: 0;
+
+h2 {
+  font-size: clamp(2rem, 1.224137931rem + 3.3103448276vw, 3.5rem);
 }
-@media (max-width: 414px) {
-  .header__buttons {
-    display: none;
-  }
+
+h3 {
+  font-size: clamp(1.75rem, 1.6206896552rem + 0.5517241379vw, 2rem);
 }
 
 /*# sourceMappingURL=style.css.map */
