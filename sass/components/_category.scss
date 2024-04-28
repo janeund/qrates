@@ -1,0 +1,28 @@
+@use '../util/' as u;
+
+.category {
+  background-color: var(--color-green);
+  padding-block: u.rem(30);
+  &__container {
+    display: flex;
+    & > *:not(:last-child) {
+      border-right: 1px solid var(--color-black);
+    }
+  }
+  &__label {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 2px solid var(--color-black);
+    padding: u.rem(10) u.rem(20);
+    background-color: var(--color-white);
+  }
+  &__item {
+    padding-inline: u.rem(20);
+  }
+  &__description {
+    font-size: u.rem(28);
+    line-height: 1.4;
+  }
+}
