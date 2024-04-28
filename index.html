@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="sass/style.css">
   <link rel="stylesheet" media="all"
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&amp;display=swap">
+  <script src="https://kit.fontawesome.com/c8e3ad46a1.js" crossorigin="anonymous"></script>
   <script defer src="script.js"></script>
 </head>
 
@@ -16,23 +17,30 @@
   <div class="page-wrapper">
     <header class="header">
       <div class="header__container container">
-        <a href="" class="header__logo">
-          <img src="./src/img/logo.svg" alt="qrates">
+        <a href="" class="header__logo logo">
+          <img class="logo__image" src="./src/img/logo.svg" alt="qrates">
         </a>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__list-item">
               <div class="navigation-submenu">
-                <div class="navigation-submenu__button">Discover music
+                <div class="navigation-submenu__button">
+                  <div>Discover music</div>
                   <i class="arrow-button"></i>
                 </div>
                 <ul class="navigation-submenu__list">
                   <li class="navigation-submenu__item">
                     <a href="" class="navigation-submenu__link">Records</a>
-                    <a href="" class="navigation-submenu__link">Cassettes</a>
-                    <a href="" class="navigation-submenu__link">Stories</a>
-                    <a href="" class="navigation-submenu__link">Qrates Curated</a>
                   </li>
+                  <div class="navigation-submenu__item">
+                    <a href="" class="navigation-submenu__link">Cassettes</a>
+                  </div>
+                  <div class="navigation-submenu__item">
+                    <a href="" class="navigation-submenu__link">Stories</a>
+                  </div>
+                  <div class="navigation-submenu__item">
+                    <a href="" class="navigation-submenu__link">Qrates Curated</a>
+                  </div>
                 </ul>
               </div>
             </li>
@@ -53,11 +61,15 @@
             <a href="" class="navigation__login-button"></a>
           </div>
         </nav>
-        <a href="" class="header__search search-icon"></a>
-        <a href="" class="header__cart cart-icon"></a>
+        <a href="" class="header__search search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="" class="header__cart cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
         <div class="header__right-bar">
           <a href="" class="header__login-button">Log In</a>
-          <a href="" class="header__start-button">Make your own</a>
+          <a href="" class="header__start-button button button--gray">Make your own</a>
           <div class="header__burger burger">
             <span class="burger__line"></span>
             <span class="burger__line"></span>

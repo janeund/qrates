@@ -2,6 +2,7 @@
   --color-yellow: #FFF804;
   --color-pink: #E280FF;
   --color-green: #81836C;
+  --color-gray: #48494856;
   --color-black: #000000;
   --color-white: #ffffff;
 }
@@ -15,8 +16,8 @@
 body {
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(1rem, 0.9353448276rem + 0.275862069vw, 1.125rem);
-  line-height: 1.7;
+  font-size: 100%;
+  line-height: 1.1;
   overflow-x: hidden;
 }
 
@@ -30,6 +31,7 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -44,7 +46,7 @@ a:active {
   text-decoration: none;
 }
 
-.wrapper {
+.container {
   width: min(100% - 2rem, 69.375rem);
   margin-inline: auto;
 }
@@ -56,6 +58,15 @@ a:active {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.arrow-button {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 h1,
@@ -89,6 +100,90 @@ h2 {
 
 h3 {
   font-size: clamp(1.75rem, 1.6206896552rem + 0.5517241379vw, 2rem);
+}
+
+.header {
+  position: relative;
+  height: 100px;
+  font-weight: 500;
+}
+.header__container {
+  padding-inline: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__right-bar {
+  margin-inline-start: auto;
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+}
+.header__login-button, .header__start-button {
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 38px;
+}
+.logo__image {
+  max-width: 100%;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 20px;
+}
+.navigation__link {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.navigation-submenu {
+  position: relative;
+}
+.navigation-submenu__list {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  top: calc(100% + 10px);
+  background-color: var(--color-black);
+}
+.navigation-submenu__list > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+.navigation-submenu__list.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation-submenu__button {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.navigation-submenu__link {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.button {
+  display: inline-flex;
+  height: 50px;
+  border-radius: 87px;
+  padding: 0 23.5px 0 25.5px;
+  align-items: center;
+}
+.button--gray {
+  background-color: var(--color-gray);
+  color: var(--color-white);
 }
 
 /*# sourceMappingURL=style.css.map */

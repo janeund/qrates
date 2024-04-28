@@ -1,0 +1,45 @@
+@use '../util/' as u;
+
+.navigation {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__link {
+    color: inherit;
+    text-transform: uppercase;
+  }
+  
+}
+
+.navigation-submenu {
+  position: relative;
+  &__list {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    top: calc(100% + 10px);
+    background-color: var(--color-black);
+    & >*:not(:last-child) {
+      margin-bottom: 16px;
+  }
+  }
+  &__list.is-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__button {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &__link {
+    font-size: u.rem(20);
+    font-weight: 500;
+    color: var(--color-white);
+    white-space: nowrap;
+  }
+}

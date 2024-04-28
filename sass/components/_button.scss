@@ -1,0 +1,14 @@
+@use '../util/' as u;
+
+.button {
+  display: inline-flex;
+  height: 50px;
+  border-radius: calc(174px / 2);
+  padding: 0 23.5px 0 25.5px;
+  align-items: center;
+  &--gray {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+  }
+  
+}

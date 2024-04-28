@@ -9,12 +9,13 @@
 body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(
-    u.rem(16),
-    0.9353448275862069rem + 0.27586206896551724vw,
-    u.rem(18)
-  );
-  line-height: 1.7;
+  font-size: 100%;
+  // font-size: clamp(
+  //   u.rem(16),
+  //   0.9353448275862069rem + 0.27586206896551724vw,
+  //   u.rem(18)
+  // );
+  line-height: 1.1;
   overflow-x: hidden;
 }
 
@@ -28,6 +29,7 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -42,7 +44,7 @@ a:active {
   text-decoration: none;
 }
 
-.wrapper {
+.container {
   width: min(100% - u.rem(32), u.rem(1110));
   margin-inline: auto;
 }
@@ -54,4 +56,13 @@ a:active {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.arrow-button {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
