@@ -74,20 +74,6 @@ h2,
 h3 {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
-  line-height: 1.1;
-}
-h1 span,
-h2 span,
-h3 span {
-  display: inline-block;
-}
-h1 span::after,
-h2 span::after,
-h3 span::after {
-  content: "";
-  height: 2px;
-  display: block;
-  background-color: var(--color-green);
 }
 
 h1 {
@@ -131,6 +117,67 @@ h3 {
 }
 .logo__image {
   max-width: 100%;
+}
+
+.hero {
+  padding: 50px 30px;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.hero__left {
+  width: 55%;
+}
+.hero__heading {
+  margin-block-end: 2.5rem;
+  font-size: 4.375rem;
+  font-weight: 900;
+  letter-spacing: 0.059375rem;
+  text-transform: uppercase;
+}
+.hero__heading span {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke-width: 0.125rem;
+  -webkit-text-stroke-color: var(--color-black);
+}
+.hero__description {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  max-width: 40.625rem;
+  font-weight: 500;
+}
+.hero__buttons {
+  display: flex;
+  padding: 2.5rem 0 2.1875rem;
+  gap: 1.25rem;
+}
+.hero__button {
+  max-width: 15.625rem;
+  min-width: 11.25rem;
+  width: 45%;
+  justify-content: center;
+}
+.hero__right {
+  width: calc(45% + 48px);
+}
+.hero__image {
+  width: -webkit-calc(100% - 2%);
+  width: 98%;
+  min-width: 426px;
+  -webkit-transform: rotate(10deg) translate3d(0, 0, 0);
+  transform: rotate(10deg) translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateZ(10deg);
+}
+.hero__image img {
+  width: 100%;
+  max-width: 510px;
+  max-height: 75vh;
+  border: 2px solid #000000;
 }
 
 .navigation__list {
@@ -180,10 +227,24 @@ h3 {
   border-radius: 87px;
   padding: 0 23.5px 0 25.5px;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 1.5625rem;
+  cursor: pointer;
 }
 .button--gray {
   background-color: var(--color-gray);
   color: var(--color-white);
+}
+.button--black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.button--bordered {
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
 }
 
 /*# sourceMappingURL=style.css.map */

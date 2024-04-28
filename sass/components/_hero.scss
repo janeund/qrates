@@ -1,0 +1,62 @@
+@use '../util/' as u;
+
+.hero {
+  padding: 50px 30px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: u.rem(40);
+  }
+  &__left {
+    width: 55%;
+  }
+  &__heading {
+    margin-block-end: u.rem(40);
+    font-size: u.rem(70);
+    font-weight: 900;
+    letter-spacing: u.rem(0.95);
+    text-transform: uppercase;
+    & span {
+      display: block;
+      color: transparent;
+      -webkit-text-stroke-width: u.rem(2);
+      -webkit-text-stroke-color: var(--color-black);
+    }
+  }
+  &__description {
+    font-size: u.rem(28);
+    line-height: 1.4;
+    max-width: u.rem(650);
+    font-weight: 500;
+  }
+  &__buttons {
+    display: flex;
+    padding: u.rem(40) 0 u.rem(35);
+    gap: u.rem(20);
+  }
+  &__button {
+    max-width: u.rem(250);
+    min-width: u.rem(180);
+    width: calc(50% - 5%);
+    justify-content: center;
+  }
+  &__right {
+    width: calc(45% + 48px);
+  }
+  &__image {
+    width: -webkit-calc(100% - 2%);
+    width: calc(100% - 2%);
+    min-width: 426px;
+    -webkit-transform: rotate(10deg) translate3d(0, 0, 0);
+    transform: rotate(10deg) translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateZ(10deg);
+    & img {
+      width: 100%;
+      max-width: 510px;
+      max-height: 75vh;
+      border: 2px solid #000000;
+    }
+  }
+}
