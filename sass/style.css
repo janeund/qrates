@@ -60,6 +60,10 @@ a:active {
   overflow: hidden;
 }
 
+.desktop-hidden {
+  display: none;
+}
+
 .arrow-button {
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -90,21 +94,25 @@ h3 {
 
 .header {
   position: relative;
-  height: 100px;
   font-weight: 500;
 }
 .header__container {
-  padding-inline: 30px;
+  padding-inline: 1.875rem;
   display: flex;
+  height: 6.25rem;
   align-items: center;
-  gap: 20px;
+  gap: 2.5rem;
 }
 .header__right-bar {
   margin-inline-start: auto;
   text-transform: uppercase;
+  padding-left: 1.25rem;
   display: flex;
-  gap: 20px;
-  padding-left: 20px;
+  gap: 1.875rem;
+}
+.header__search i, .header__cart i {
+  font-size: 1.625rem;
+  color: var(--color-black);
 }
 .header__login-button, .header__start-button {
   color: inherit;
@@ -113,7 +121,7 @@ h3 {
 }
 
 .logo {
-  width: 38px;
+  width: 2.375rem;
 }
 .logo__image {
   max-width: 100%;
