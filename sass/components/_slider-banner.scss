@@ -1,0 +1,6 @@
+@use '../util/' as u;
+
+.silder-banner {
+  padding-block: u.rem(30);
+  background-color: var(--color-black);
+}
