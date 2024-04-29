@@ -388,4 +388,9 @@ h3 {
   line-height: 1.4;
 }
 
+.silder-banner {
+  padding-block: 1.875rem;
+  background-color: var(--color-black);
+}
+
 /*# sourceMappingURL=style.css.map */
