@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: u.rem(120);
   }
   &__column {
     font-size: u.rem(20);
@@ -28,9 +29,12 @@
     display: flex;
     gap: u.rem(30);
   }
+  &__logo-image {
+    width: u.rem(90);
+  }
   &__logo-text {
     color: var(--color-white);
-    font-size: u.rem(50);
+    font-size: u.rem(43);
     font-weight: 900;
     letter-spacing: u.rem(0.95);
     text-transform: uppercase;
@@ -45,5 +49,80 @@
     display: flex;
     justify-content: space-between;
   }
-  
+  &__language {
+    display: flex;
+    margin-bottom: u.rem(25);
+    justify-content: end;
+  }
+  &__social {
+    display: flex;
+    gap: u.rem(15);
+    justify-content: end;
+    margin-bottom: u.rem(30);
+    & a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: u.rem(40);
+      height: u.rem(40);
+      background: var(--color-white);
+      border-radius: 100%;
+    }
+    & i {
+      font-size: u.rem(28);
+      color: var(--color-black);
+    }
+  }
+}
+
+.language-selector {
+  display: inline-block;
+  position: relative;
+  height: u.rem(50);
+  width: u.rem(155);
+  overflow: hidden;
+  &__input {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    height: u.rem(50);
+    min-width: u.rem(100);
+    width: 100%;
+    padding: 0 u.rem(40) 0 u.rem(20);
+    font-weight: 500;
+    border: 2px solid #ffffff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    background: var(--color-black);
+    cursor: pointer;
+    
+    &::after {
+      content: '';
+      // width: 10px;
+      // height: 10px;
+      display: inline-flex;
+      position: absolute;
+      right: u.rem(20);
+      top: 40%;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+}
+
+.legal-nav {
+  display: flex;
+  gap: u.rem(20);
+  font-weight: 500;
+  &__link {
+    font-size: u.rem(14);
+    color: var(--color-white);
+  }
+  &__small {
+    font-size: u.rem(14);
+  }
 }
