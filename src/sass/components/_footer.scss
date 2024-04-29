@@ -1,0 +1,49 @@
+@use '../util/' as u;
+
+.footer {
+  background-color: var(--color-black);
+  padding: u.rem(60) u.rem(80);
+  color: var(--color-white);
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__column {
+    font-size: u.rem(20);
+  }
+  &__item {
+    line-height: 2;
+    &--title {
+      margin-bottom: u.rem(24);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: u.rem(1);
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+  &__logo-container {
+    display: flex;
+    gap: u.rem(30);
+  }
+  &__logo-text {
+    color: var(--color-white);
+    font-size: u.rem(50);
+    font-weight: 900;
+    letter-spacing: u.rem(0.95);
+    text-transform: uppercase;
+    & span {
+      display: block;
+      color: transparent;
+      -webkit-text-stroke-width: u.rem(2);
+      -webkit-text-stroke-color: var(--color-white);
+    }  
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}

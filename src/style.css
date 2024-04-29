@@ -455,4 +455,51 @@ h3 {
   text-wrap: nowrap;
 }
 
+.footer {
+  background-color: var(--color-black);
+  padding: 3.75rem 5rem;
+  color: var(--color-white);
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__column {
+  font-size: 1.25rem;
+}
+.footer__item {
+  line-height: 2;
+}
+.footer__item--title {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+.footer__link {
+  color: inherit;
+}
+.footer__logo-container {
+  display: flex;
+  gap: 1.875rem;
+}
+.footer__logo-text {
+  color: var(--color-white);
+  font-size: 3.125rem;
+  font-weight: 900;
+  letter-spacing: 0.059375rem;
+  text-transform: uppercase;
+}
+.footer__logo-text span {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke-width: 0.125rem;
+  -webkit-text-stroke-color: var(--color-white);
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */
