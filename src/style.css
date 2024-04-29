@@ -89,11 +89,11 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 1.224137931rem + 3.3103448276vw, 3.5rem);
+  font-size: clamp(2rem, 1.224137931rem + 3.3103448276vw, 2.5rem);
 }
 
 h3 {
-  font-size: clamp(1.75rem, 1.6206896552rem + 0.5517241379vw, 2rem);
+  font-size: clamp(1.625rem, 1.6206896552rem + 0.5517241379vw, 2.25rem);
 }
 
 .header {
@@ -238,6 +238,7 @@ h3 {
   border-radius: 87px;
   padding: 0 23.5px 0 25.5px;
   align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-weight: 700;
   white-space: nowrap;
@@ -388,16 +389,9 @@ h3 {
   align-items: center;
 }
 .category__label {
-  font-size: 1.25rem;
-  max-width: 9.375rem;
-  min-width: 6.25rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 2px solid var(--color-black);
-  padding: 0.625rem 1.25rem;
-  background-color: var(--color-white);
   margin-bottom: 1.875rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
 }
 .category__description {
   font-size: 1.25rem;
@@ -415,9 +409,50 @@ h3 {
   max-height: 26.25rem;
 }
 
-.silder-banner {
+.slider-banner {
   padding-block: 1.875rem;
   background-color: var(--color-black);
+  color: var(--color-white);
+}
+.slider-banner__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-banner__label {
+  margin-bottom: 1.875rem;
+  border: 2px solid var(--color-white);
+  background: var(--color-black);
+}
+.slider-banner__title {
+  margin-bottom: 0.625rem;
+}
+.slider-banner__description {
+  max-width: 45rem;
+  width: 65%;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.slider-banner__button {
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+  min-width: 18.75rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  max-width: 9.375rem;
+  min-width: 6.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  text-wrap: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,14 +19,14 @@ h2 {
   font-size: clamp(
     u.rem(32),
     1.2241379310344829rem + 3.3103448275862064vw,
-    u.rem(56)
+    u.rem(40)
   );
 }
 
 h3 {
   font-size: clamp(
-    u.rem(28),
+    u.rem(26),
     1.6206896551724137rem + 0.5517241379310345vw,
-    u.rem(32)
+    u.rem(36)
   );
 }

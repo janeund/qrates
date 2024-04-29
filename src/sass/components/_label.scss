@@ -1,0 +1,14 @@
+@use '../util/' as u;
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: u.rem(20);
+  max-width: u.rem(150);
+  min-width: u.rem(100);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: u.rem(10) u.rem(20);
+  text-wrap: nowrap;
+}
