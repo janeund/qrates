@@ -1,7 +1,8 @@
-function showSlides() {
-  let i;
-  let slides = document.querySelectorAll('slider__item');
-  console.log(slides)
+window.onload = () => {
+
 }
 
-showSlides()
+const showSlides = () => {
+  let slider = document.querySelector('.slider__list');
+  let slides = document.querySelectorAll('.slider__item');
+}
