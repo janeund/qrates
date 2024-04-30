@@ -1,15 +1,15 @@
 @use '../util/' as u;
 
 .hero {
-  padding: 50px 30px;
+  padding: u.rem(80) u.rem(30);
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: u.rem(40);
   }
   &__left {
     width: 55%;
+    margin-right: u.rem(20);
   }
   &__heading {
     margin-block-end: u.rem(40);
@@ -27,7 +27,7 @@
   &__description {
     font-size: u.rem(28);
     line-height: 1.4;
-    max-width: u.rem(650);
+    max-width: u.rem(550);
     font-weight: 500;
   }
   &__buttons {
@@ -42,20 +42,32 @@
     justify-content: center;
   }
   &__right {
-    width: calc(45% + 48px);
+    width: 35%;
   }
   &__image {
-    width: -webkit-calc(100% - 2%);
-    width: calc(100% - 2%);
-    min-width: 426px;
+    width: 100%;
     -webkit-transform: rotate(10deg) translate3d(0, 0, 0);
     transform: rotate(10deg) translate3d(0, 0, 0);
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateZ(10deg);
     & img {
-      width: 100%;
-      max-width: 510px;
+      width: calc(100% - 2%);
+      max-width: 410px;
       border: 2px solid #000000;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .hero {
+    &__container {
+      display: block;
+    }
+    &__left {
+      width: 100%;
+      text-align: center;
+      padding-inline: u.rem(20);
+      margin-right: 0;
     }
   }
 }
