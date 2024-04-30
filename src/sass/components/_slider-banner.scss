@@ -36,22 +36,22 @@
 
 .slider {
   &__container {
-    
-  }
-  &__list {
     position: relative;
-    min-height: u.rem(350);
-    min-width: u.rem(500);
+    height: u.rem(350);
+    max-width: u.rem(500);
+    margin-block: auto;
+    width: u.rem(400);
     margin-bottom: u.rem(30);
   }
-  &__item {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
   &__image {
-    object-fit: cover;
+    position: absolute;
+    opacity: 0;
     width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+    &.active {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
   }
 }
