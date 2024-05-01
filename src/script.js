@@ -1,5 +1,6 @@
 window.onload = () => {
   initializeSlider();
+  openMenu();
 }
 
 // Active slide index
@@ -43,3 +44,14 @@ const nextSlide = () => {
   }
   updateCurrent(slideIndex);
 };
+
+// Initialize open menu button
+const openMenu = () => {
+  const openButton = document.querySelector('.hamburger');
+  const navigation = document.querySelector('.navigation');
+  openButton.addEventListener('click', () => {
+    openButton.classList.toggle('active');
+    navigation.classList.toggle('active');
+    document.body.classList.toggle('scroll-off');
+  })
+}

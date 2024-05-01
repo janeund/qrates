@@ -29,6 +29,9 @@
     color: inherit;
     display: flex;
     align-items: center;
+    @media (width <= u.em(990)) {
+      display: none !important;
+    }
   }
 }
 
@@ -36,5 +39,42 @@
   width: u.rem(38);
   &__image {
     max-width: 100%;
+  }
+}
+
+@media (width <= u.em(990)) {
+  .header {
+    &__container {
+      height: u.rem(65);
+      padding-inline: u.rem(20);
+    }
+  }
+  .hamburger {
+    width: u.rem(64);
+    height: u.rem(64);
+    padding: u.rem(14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 4;
+    row-gap: u.rem(7);
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2;
+    & span {
+      width: 100%;
+      height: u.rem(2);
+      background-color: var(--color-black);
+      transition: transform 0.3s ease;
+    }
+    &.active span:first-child {
+      transform: rotate(45deg) translateX(6px);
+    }
+    &.active span:last-child {
+      transform: rotate(-45deg) translateX(6px);
+    }
+    &.active span:nth-child(2) {
+      display: none;
+    }
   }
 }

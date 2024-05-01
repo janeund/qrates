@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 990px) {
+@media (width <= u.em(990)) {
   .hero {
     &__container {
       display: block;
