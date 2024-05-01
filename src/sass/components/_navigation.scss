@@ -9,7 +9,12 @@
     color: inherit;
     text-transform: uppercase;
   }
-  
+  &__buttons {
+    display: none;
+  }
+  &__social {
+    display: none;
+  }
 }
 
 .navigation-submenu {
@@ -44,7 +49,7 @@
   }
 }
 
-@media (width <= u.em(990)) {
+@media (width <= u.em(1010)) {
   .navigation {
     visibility: hidden;
     opacity: 0;

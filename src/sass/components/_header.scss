@@ -29,7 +29,7 @@
     color: inherit;
     display: flex;
     align-items: center;
-    @media (width <= u.em(990)) {
+    @media (width <= u.em(1010)) {
       display: none !important;
     }
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media (width <= u.em(990)) {
+@media (width <= u.em(1010)) {
   .header {
     &__container {
       height: u.rem(65);

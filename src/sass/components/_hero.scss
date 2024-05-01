@@ -36,8 +36,7 @@
     gap: u.rem(20);
   }
   &__button {
-    max-width: u.rem(250);
-    min-width: u.rem(180);
+    min-width: u.rem(120);
     width: calc(50% - 5%);
     justify-content: center;
   }
@@ -58,16 +57,39 @@
   }
 }
 
-@media (width <= u.em(990)) {
+@media (width <= u.em(1010)) {
   .hero {
     &__container {
       display: block;
     }
     &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       text-align: center;
       padding-inline: u.rem(20);
       margin-right: 0;
+    }
+    &__image {
+      display: none;
+    }
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+      width: u.rem(600);
+      gap: u.rem(10);
+    }
+    &__button {
+      width: 80%;
+    }
+  }
+}
+
+@media (width <= u.em(1010)) {
+  .hero {
+    &__buttons {
+      width: u.rem(300);
     }
   }
 }

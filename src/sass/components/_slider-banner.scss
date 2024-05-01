@@ -55,3 +55,12 @@
     }
   }
 }
+
+@media (width <= u.em(480)) {
+  .slider {
+    &__container {
+      height: u.rem(180);
+      width: u.rem(250);
+      margin-bottom: u.rem(30);
+    }
+}}
