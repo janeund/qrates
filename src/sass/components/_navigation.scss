@@ -17,7 +17,7 @@
       height: 2px;
       background-color: var(--color-black);
       content: '';
-      transition: width 0.3s ease-out; 
+      transition: width 0.5s ease-out; 
     }
     &:hover::after,
     &:focus::after {
