@@ -1,0 +1,35 @@
+@use '../util/' as u; 
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: u.rem(20);
+  justify-content: space-between;
+  margin-bottom: u.rem(40);
+}
+
+.project {
+  width: u.rem(300);
+  &__title {
+    line-height: 2;
+    font-weight: 600;
+    font-size: u.rem(22);
+  }
+  &__artist {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: u.rem(18);
+  }
+  &__genre-tag {
+    display: inline-block;
+    padding: u.rem(2) u.rem(12);
+    margin-top: u.rem(10);
+    line-height: 1.9;
+    font-size: u.rem(12);
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border-radius: u.rem(25);
+    border: 2px solid #000000;
+  }
+}

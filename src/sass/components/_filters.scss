@@ -1,0 +1,14 @@
+@use '../util/' as u;
+
+.filters {
+  display: flex;
+  gap: u.rem(10);
+  margin-block: u.rem(40);
+  & a {
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: u.rem(32);
+    border: 2px solid var(--color-black);
+    padding: u.rem(6) u.rem(12);
+  }
+}

@@ -55,3 +55,64 @@ const openMenu = () => {
     document.body.classList.toggle('scroll-off');
   })
 }
+
+
+// Project page functions
+import projects from "./projects.json" with { type: "json" };
+let filteredProjects = [...projects];
+
+const projectsContainer = document.querySelector('.projects');
+
+const displayProjects = () => {
+  if (filteredProjects.length < 1) {
+    projectsContainer.innerHTML = `<h6>Sorry, no products matched your search</h6>`;
+    return;
+  }
+
+  projectsContainer.innerHTML = filteredProjects
+    .map((project) => {
+      const { id, title, artist, genres, image } = project;
+      return `<div class="projects__item project" data-id="${id}">
+            <img src="${image}" alt="">
+            <div class="project__info">
+              <div class="project__title">${title}</div>
+              <div class="project__artist">${artist}</div>
+              <div class="project__genre-tag">${genres}</div>
+            </div>
+          </div>`;
+    })
+    .join('');
+};
+
+// Filter Buttons
+const filterButtonsContainer = document.querySelector('.filters');
+
+const displayButtons = () => {
+  const buttons = [
+    'all',
+    ...new Set(projects.map((project) => project.genres)),
+  ];
+  // console.log(buttons);
+  filterButtonsContainer.innerHTML = buttons
+    .map((filterBtn) => {
+      return `<a class='filter-btn' data-id="${filterBtn}">${filterBtn}</a>`;
+    })
+    .join('');
+};
+
+filterButtonsContainer.addEventListener('click', (e) => {
+  const el = e.target;
+  if (el.classList.contains('filter-btn')) {
+    if (el.dataset.id === 'all') {
+      filteredProjects = [...projects];
+    } else {
+      filteredProjects = projects.filter((project) => {
+        return project.genres === el.dataset.id;
+      });
+    }
+    displayProjects();
+  }
+});
+
+displayProjects();
+  displayButtons();

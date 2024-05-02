@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "genres": "Rock",
+        "image": "src/img/project-1.png"
+    },
+    {
+        "id": 2,
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "genres": "Pop",
+        "image": "src/img/project-2.png"
+    },
+    {
+        "id": 3,
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "genres": "Rock",
+        "image": "src/img/project-3.png"
+    },
+    {
+        "id": 4,
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "genres": "Grunge",
+        "image": "src/img/project-4.png"
+    },
+    {
+        "id": 5,
+        "title": "Rolling in the Deep",
+        "artist": "Adele",
+        "genres": "Soul",
+        "image": "src/img/project-5.png"
+    },
+    {
+        "id": 6,
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "genres": "Funk",
+        "image": "src/img/project-6.png"
+    },
+    {
+        "id": 7,
+        "title": "Bohemian Like You",
+        "artist": "The Dandy Warhols",
+        "genres": "Rock",
+        "image": "src/img/project-2.png"
+    }
+]
