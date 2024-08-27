@@ -636,6 +636,7 @@ h3 {
   border-radius: 2rem;
   border: 2px solid var(--color-black);
   padding: 0.375rem 0.75rem;
+  cursor: pointer;
 }
 
 .projects {
